@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VMware NSX Quizz</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<center>
+		<head>
+		<h1>VMware NSX Quizz</h1>
+		<p>Created by Sai Linn Thu</p>
+		</head>
+	</center>
+
+	<form name="quiz" id="quiz">
+	<ol>
+	<li>
+		<p>Choose all that apply. You can install NSX Edge as :</p>
+		<input type="checkbox" name="question1" value="right"> Edge Services Gateway (ESG)<br>
+  		<input type="checkbox" name="question1" value="right"> Distributed Logical Router (DLR)<br>
+  		<input type="checkbox" name="question1" value="wrong"> Logical VPNs<br>
+  		<input type="checkbox" name="question1" value="wrong"> Logical Load Balancer<br><br>
+	</li>
+	<li>
+		<p>The number of edge appliances including ESGs and DLRs is limited to how many on a host.</p>
+		<input type="radio" id="mc" name="question2" value=50> 50<br>
+		<input type="radio" id="mc" name="question2" value=150> 150<br>
+		<input type="radio" id="mc" name="question2" value=250> 250<br>
+		<input type="radio" id="mc" name="question2" value=300> 300<br> <br>
+	</li>
+	<li>	
+		<p>You can only install single ESG virtual appliances in a datacenter.</p>
+		<input type="radio" id="mc" name="question3" value="True"> True<br>
+		<input type="radio" id="mc" name="question3" value="False"> False<br> <br>
+	</li>
+	<li>
+		<p>Each ESG virtual appliance can have a total of how many uplink(s) and internal network interfaces.</p>
+	
+	
+		<input type="radio" id="mc" name="question4" value=1> 1<br>
+		<input type="radio" id="mc" name="question4" value=4> 4<br>
+		<input type="radio" id="mc" name="question4" value=8> 8<br>
+		<input type="radio" id="mc" name="question4" value=10> 10<br> <br>
+	</li>
+	<li>
+		<p>With a trunk, an ESG can have up to how many subinterfaces.</p>
+
+		<input type="radio" id="mc" name="question5" value=50> 50<br>
+		<input type="radio" id="mc" name="question5" value=100> 100<br>
+		<input type="radio" id="mc" name="question5" value=150> 150<br>
+		<input type="radio" id="mc" name="question5" value=200> 200<br> <br>
+	</li>
+	<li>
+		<p>A DLR can have how many uplink interfaces and up to how many internal interfaces.</p>
+
+		<input type="radio" id="mc" name="question6" value=4100> 4, 100<br>
+		<input type="radio" id="mc" name="question6" value=41000> 4, 1000<br>
+		<input type="radio" id="mc" name="question6" value=8100> 8, 100<br>
+		<input type="radio" id="mc" name="question6" value=81000> 8, 1000<br> <br>
+	</li>
+	<li>
+		<p>Two main components of DLR :</p>
+		<input type="checkbox" name="question7" value="right"> Control VM<br>
+  		<input type="checkbox" name="question7" value="right"> DLR Kernel Modules (VIBs)<br>
+  		<input type="checkbox" name="question7" value="wrong"> vCenter<br>
+  		<input type="checkbox" name="question7" value="wrong"> Firewall<br><br>
+	</li>
+	<li>
+		<p>In a cross-vCenter environment, there can be one primary NSX Manager and maximum of up to how many secondary NSX Managers.</p>
+
+		<input type="radio" id="mc" name="question8" value=2> 2<br>
+		<input type="radio" id="mc" name="question8" value=3> 3<br>
+		<input type="radio" id="mc" name="question8" value=5> 5<br>
+		<input type="radio" id="mc" name="question8" value=7> 7<br> <br>
+	</li>
+	<li>
+		<p>Which of the following component provides an aggregated system view and is the centralized network management component of NSX.</p>
+
+		<input type="radio" id="mc" name="question9" value="ESG"> Edge Services Gateway (ESG)<br>
+		<input type="radio" id="mc" name="question9" value="DLR">  Distributed Logical Router (DLR)<br>
+		<input type="radio" id="mc" name="question9" value="NSXController"> NSX Controller<br>
+		<input type="radio" id="mc" name="question9" value="NSXManager"> NSX Manager<br> <br>
+	</li>
+	<li>
+		<p>Integrating which service with NSX improves the security of user authentication for vCenter users and enables NSX to authenticate users from other identity services such as AD, NIS, and LDAP.</p>
+
+		<input type="radio" id="mc" name="question10" value="SSO"> Single Sign On (SSO)<br>
+		<input type="radio" id="mc" name="question10" value="ESG"> Edge Services Gateway (ESG)<br>
+		<input type="radio" id="mc" name="question10" value="DLRVM"> DLR Control VM<br>
+		<input type="radio" id="mc" name="question10" value="Firewall"> Distributed Firewall<br> <br>
+	</li>
+	</ol>
+
+		
+		<center>
+		<button type="button" id="button" value="Finish" onclick="check();" class="btn btn-default">
+			  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Finished!
+		</button>
+		</center>
+		
+	</form>
+
+		<div id="after_submit">
+			<p id="number_correct">
+				
+			</p>
+		</div>
+		<hr>
+		<center>
+		<div class="footer">
+			<p>Copyright © 2017 Sai Linn Thu</p>	
+		</div>
+		</center>
+	
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+#quiz {
+  padding: 0px;
+  margin: 10px;	
+}
+
+#after_submit {
+	visibility: hidden;
+}
+
+#button {
+	background-color: orange; /*#046380*/
+  	color: black;
+}
+
+#button:hover {
+  background-color: #566573; /*#034F66*/
+  color: #FFF;
+}
+
+button:active {
+  background-color: #034154; /*#034154*/
+  box-shadow: none;
+  position: relative;
+  top: -8px;
+  left: 2px;
+}
